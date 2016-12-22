@@ -21,11 +21,12 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 * keywords - 关键字
 
 #### 案例内容
-1. http协议：抓包工具
+1. http协议：抓包工具，上传文件
 2. 网络爬虫
 3. 控制并发
 4. fs模块
 5. 爬虫内容写入本地文件
+6. 上传文件
 6. jade模板
 7. jade模板显示本地文件内容
 8. 设置路由
@@ -42,9 +43,9 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 18. es6
 19. webpack
 20. vue基础
-21. vue实现学生管理系统
+21. vue实现图书管理系统
 22. vue实现移动电商
 23. cms
 24. angular "hello world"
 25. react "hello world"
-26. 收尾：easyUI,swiper,flex
+26. 收尾：easyUI,swiper,flex，echarts
