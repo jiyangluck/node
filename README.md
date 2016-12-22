@@ -45,9 +45,22 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 18. es6
 19. webpack
 20. vue基础
-21. vue实现图书管理系统
-22. vue实现移动电商
 23. cms
 24. angular "hello world"
 25. react "hello world"
 26. 收尾：easyUI,swiper,flex，echarts
+
+#### 内容管理系统cms需求
+1. 后台发布文章，前台显示
+2. 文章可以修改和删除
+3. 后台图片上传，前台显示
+4. 登录模块:session,cookie
+5. 在线聊天功能websocket
+6. 用户信息管理功能
+7. 文章点赞功能
+8. 文章评论功能
+9. 积分购买文章（部分文章购买后才可以完整阅读）
+10. 使用vue重写该项目后台
+11. 服务器渲染
+12. 前端自动化
+13. 数据可视化：报表分析

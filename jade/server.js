@@ -46,6 +46,39 @@ app.get("/switch",function(req,res){
 	res.render("switch",{data:login});
 })
 
+var newsData = [
+	{
+		"title":"微信小程序",
+		"text":"学习开发微信小程序！学习开发微信小程序！学习开发微信小程序！"
+	},
+	{
+		"title":"学习javascript",
+		"text":"学习javascript！学习javascript！学习javascript！学习javascript！"
+	},
+	{
+		"title":"学习html",
+		"text":"学习html！学习html！学习html！学习html！学习html！学习html！"
+	},
+	{
+		"title":"学习node",
+		"text":"学习node！学习node！学习node！学习node！学习node！学习node！"
+	},
+	{
+		"title":"学习css",
+		"text":"学习css！学习css！学习css！学习css！学习css！学习css！学习css！"
+	},
+]
+
+
+
+app.get("/newslist",function(req,res){
+	res.render("newslist",{data:newsData});
+})
+
+app.get("/news/:pageid",function(req,res){
+	res.render("news",{data:newsData[req.params.pageid]});
+})
+
 app.listen(3000,function(){
 	console.log("服务器已经启动");
 })

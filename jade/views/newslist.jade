@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1 新闻列表
+	each val,index in data
+		h3
+			a(href="/news/" + index) #{val.title}
+		p #{val.text}
