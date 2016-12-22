@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	ul
+		- for(var i=0;i<fruits.length;i++)
+			li #{fruits[i]}
+
+
+	ul
+		each val,index in fruits
+			li
+				p 内容 #{val}
+				p 索引 #{index}

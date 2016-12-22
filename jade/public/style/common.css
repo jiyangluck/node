@@ -1,0 +1,48 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.clearFix:before,.clearFix:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+
+.menu{
+	width:20%;
+	float: left;
+	background-color: #aaa;
+	min-height:600px;
+}
+
+.menu li{
+	text-align: center;
+	line-height: 30px;
+
+}
+
+.menu a{
+	text-decoration: none;
+	color:black;
+}
+
+.menu a:hover{
+	color:yellow;
+}
+
+.content{
+	width:80%;
+	float: left;
+	background-color: #eee;
+	min-height:600px;
+}
+
+.footer div{
+	height:30px;
+	background-color: #ff0;
+}
+.footer p{
+	text-align: center;
+	line-height: 30px;
+}

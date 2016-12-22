@@ -1,0 +1,13 @@
+extends layout
+
+mixin newList(data)
+	.news-item
+		h3 #{data.title}
+		p #{data.content}
+
+block style
+	link(rel="stylesheet", href="style/data.css")
+
+block content
+	each val in news
+		mixin newList(val)

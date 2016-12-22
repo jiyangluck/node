@@ -1,0 +1,17 @@
+extends layout
+
+mixin demo(tit)
+	h3 #{tit}
+	p 
+		|this is a news,this is a news,this is a news,
+		|this is a news,this is a news,this is a news,
+		|this is a news,this is a news,this is a news,
+		|this is a news,this is a news,this is a news.
+
+
+block content
+	mixin demo("html")
+	mixin demo("css")
+	mixin demo("javascript")
+	mixin demo("node")
+	mixin demo("ajax")

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	p 登录结果: 
+			-if(data.loginornot)
+				a 已经登录
+			-else
+				a 未登录
+
+	p 分支条件 :
+			case data.permission
+				when 0
+					a 第一
+				when 1
+					a 第二
+				when 2
+					a 第三

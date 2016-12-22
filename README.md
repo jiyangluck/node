@@ -27,6 +27,8 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 4. fs模块
 5. 爬虫内容写入本地文件
 6. 上传文件
+7. websocket
+8. 在线聊天
 6. jade模板
 7. jade模板显示本地文件内容
 8. 设置路由
