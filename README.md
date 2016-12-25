@@ -21,34 +21,26 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 * keywords - 关键字
 
 #### 案例内容
-1. http协议：抓包工具，上传文件
-2. 网络爬虫
-3. 控制并发
-4. fs模块
-5. 爬虫内容写入本地文件
+1. 数据的增删改查
+2. 登录功能：session cookie
+3. html5本地存储
+4. 页面传值
+5. fs模块
 6. 上传文件
-7. websocket
-8. 在线聊天
-6. jade模板
-7. jade模板显示本地文件内容
-8. 设置路由
-9. 多页面显示本地文件数据
-10. 数据库 mongodb
-11. node操作数据库mongoose
-12. jade模板显示数据库中的数据
-13. 登录功能：session cookie
-14. html5本地存储
-15. 页面传值
-15. 使用node制作一个简单的博客网站：后台管理，前台显示
+7. http协议
+8. 网络爬虫
+9. 爬虫内容写入数据库
+10. 控制并发async
+11. websocket
+12. 在线聊天
+13. 跨域请求：jsonp
+14. webpack
+15. es6
 16. gulp
 17. sass
-18. es6
-19. webpack
-20. vue基础
-23. cms
-24. angular "hello world"
-25. react "hello world"
-26. 收尾：easyUI,swiper,flex，echarts
+18. vue基础
+19. 收尾：easyUI,swiper,flex，echarts
+
 
 #### 内容管理系统cms需求
 1. 后台发布文章，前台显示
