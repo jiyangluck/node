@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Document
+		link(rel="stylesheet", href="/style/bootstrap.min.css")
+	body
+		form.form-inline(id="stuform")
+			.form-group
+				label 学号
+				input.form-control(type='text' name="stuid" placeholder='学号')
+			.form-group
+				label 姓名
+				input.form-control(type='text' name="name" placeholder='姓名')
+			.form-group
+				label 性别
+				select.form-control(name="sex")
+					option(value="男") 男
+					option(value="女") 女
+			.form-group
+				label 年龄
+				input.form-control(type='number' name="age" placeholder='年龄')
+			button.insert.btn.btn-success(type='submit') 添加学生
+
+		table.table.table-bordered.table.hover
+			thead
+				th 编号
+				th 姓名
+				th 性别
+				th 年龄
+				th 编辑
+				th 删除
+			tbody
+				each val,index in data
+					tr
+						td.edited(stuattr='stuid')=val.stuid
+						td.edited(stuattr='name')=val.name
+						td.edited(stuattr='sex')=val.sex
+						td.edited(stuattr='age')=val.age
+						td
+							button.btn.btn-primary.update(stuid=val.stuid) 编辑
+						td
+							button.btn.btn-primary.delete(stuid=val.stuid) 删除
+
+		script(src="script/jquery.js")
+		script(src="script/edit.js")
+	

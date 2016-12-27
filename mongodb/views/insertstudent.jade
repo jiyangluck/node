@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Document
+		link(rel="stylesheet", href="/style/bootstrap.min.css")
+	body
+		a.btn.btn-link(href="/list") 学生列表
+		form(action="/insert" method="post")
+			div
+				label 学号：
+				input(type="text" name="id")
+			div
+				label 姓名
+				input(type="text" name="name")
+			div
+				label 性别
+				select(name="sex")
+					option(value="男") 男
+					option(value="女") 女
+			div
+				label 年龄
+				input(type="number" name="age") 
+			div
+				input(type="submit" value="添加学生")
+
+	
