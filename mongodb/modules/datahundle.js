@@ -32,6 +32,8 @@ function deleteData(option,next){
 function updateData(option,newOption,next){
 	mongoClient.connect(url,function(err,db){
 		db.collection('student').update(option,newOption,function(){
+			console.log(option);
+			console.log(newOption);
 			next();
 			db.close();
 		})

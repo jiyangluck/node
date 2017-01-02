@@ -27,7 +27,7 @@ app.post('/delete',function(req,res){
 
 app.post('/update',function(req,res){
 	var opt = req.body;
-	datahundle.updateData({stuid:opt.id},opt,function(){
+	datahundle.updateData({stuid:opt.stuid},opt,function(){
 		datahundle.getData(function(data){
 			res.send(data);
 		})

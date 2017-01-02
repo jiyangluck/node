@@ -4,6 +4,7 @@ html(lang="en")
 		meta(charset="UTF-8")
 		title Document
 		link(rel="stylesheet", href="/style/bootstrap.min.css")
+		link(rel="stylesheet", href="/style/index.css")
 	body
 		form.form-inline(id="stuform")
 			.form-group
@@ -33,13 +34,13 @@ html(lang="en")
 			tbody
 				each val,index in data
 					tr
-						td.edited(stuattr='stuid')=val.stuid
-						td.edited(stuattr='name')=val.name
-						td.edited(stuattr='sex')=val.sex
-						td.edited(stuattr='age')=val.age
-						td
+						td.col-md-2.edited(stuattr='stuid')=val.stuid
+						td.col-md-2.edited(stuattr='name')=val.name
+						td.col-md-2.edited(stuattr='sex')=val.sex
+						td.col-md-2.edited(stuattr='age')=val.age
+						td.col-md-2
 							button.btn.btn-primary.update(stuid=val.stuid) 编辑
-						td
+						td.col-md-2
 							button.btn.btn-primary.delete(stuid=val.stuid) 删除
 
 		script(src="script/jquery.js")
